@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Altamar · Restaurante mediterráneo en Palamós</title>
+    <meta
+      name="description"
+      content="Arroces, pescado y marisco frente al puerto de Palamós. Plaça de la Murada, 5."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav" id="nav">
+      <a href="#inicio" class="logo">Altamar</a>
+      <button
+        class="burger"
+        id="burger"
+        aria-label="Menú"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="menu">
+        <a href="#carta">Carta</a>
+        <a href="#vistas">Vistas</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#sobre">Info</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#reservar" class="btn btn-sm">Reservar</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+      <img src="img/atardecer.png" alt="Puerto de Palamós al atardecer" />
+      <div class="hero-text">
+        <h1>Altamar</h1>
+        <p>Cocina mediterránea frente al puerto de Palamós</p>
+        <a href="#reservar" class="btn">Reservar mesa</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-text">
+        <h2>El mar, a la mesa</h2>
+        <p>
+          En la Plaça de la Murada, entre la playa y el puerto, Altamar sirve
+          arroces, pescado y marisco de la costa. Gamba de Palamós, mejillones
+          al vapor y paella marinera, con la vista que merecen.
+        </p>
+        <p class="meta">4,4 sobre 5 · 567 opiniones · 20–50 € por persona</p>
+      </div>
+      <img src="img/sala.png" alt="Sala del restaurante con vistas al puerto" />
+    </section>
+
+    <section class="platos" id="favoritos">
+      <h2>Nuestros favoritos</h2>
+      <div class="grid">
+        <article class="plato">
+          <img src="img/paella.png" alt="Paella marinera con gambas" />
+          <h3>Paella marinera</h3>
+          <p>Arroz meloso con gambas, cocinado al momento.</p>
+        </article>
+        <article class="plato">
+          <img src="img/mejillones.png" alt="Mejillones al vapor" />
+          <h3>Mejillones al vapor</h3>
+          <p>Mejillones con salsa de tomate y pimentón.</p>
+        </article>
+        <article class="plato">
+          <img src="img/bacalao.png" alt="Bacalao con almejas" />
+          <h3>Bacalao con almejas</h3>
+          <p>Lomo de bacalao, patatas y salsa verde.</p>
+        </article>
+      </div>
+      <p class="extra">
+        También: tartar de gamba de Palamós, tartar de steak, patatas bravas,
+        tempura y chocolate. Menú del mediodía disponible.
+      </p>
+    </section>
+
+    <!-- ============ CARTA ============ -->
+    <section class="menu" id="carta">
+      <h2>La carta</h2>
+      <p class="lead">Producto de la lonja de Palamós, cocinado al momento.</p>
+
+      <div class="chips" role="navigation" aria-label="Categorías de la carta">
+        <a href="#c-vermut">Vermut</a>
+        <a href="#c-tapas">Tapas</a>
+        <a href="#c-entrantes">Entrantes</a>
+        <a href="#c-pescado">Pescado y marisco</a>
+        <a href="#c-lonja">Lonja de Palamós</a>
+        <a href="#c-arroces">Arroces</a>
+        <a href="#c-sugerencias">Sugerencias</a>
+        <a href="#c-mediodia">Menú del mediodía</a>
+        <a href="#c-degustacion">Menú degustación</a>
+        <a href="#c-vinos">Vinos</a>
+        <a href="#c-otros">Otros</a>
+      </div>
+
+      <div class="menu-grid">
+        <article class="cat" id="c-vermut">
+          <h3>Vermut <span>Vermuts</span></h3>
+          <ul>
+            <li><span class="n">Anxoves de l'Escala</span></li>
+            <li><span class="n">Seitons amb vinagre</span></li>
+            <li><span class="n">Braves amb salsa trufada</span></li>
+            <li><span class="n">Sonsos fregits</span></li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-tapas">
+          <h3>Tapas <span>Tapes</span></h3>
+          <ul>
+            <li><span class="n">Croquetes de gamba</span></li>
+            <li><span class="n">Piparras fregides</span></li>
+            <li><span class="n">Sardines al forn amb all i julivert</span></li>
+            <li><span class="n">Alvocat farcit</span></li>
+            <li><span class="n">Musclos al romesco</span></li>
+            <li><span class="n">Ensaladilla de gamba blanca</span></li>
+            <li><span class="n">Musclos al curri vermell</span></li>
+            <li><span class="n">Mousse de brandada</span></li>
+            <li><span class="n">Calamars a la romana</span></li>
+          </ul>
+        </article>
+
+        <article class="cat wide" id="c-entrantes">
+          <h3>Entrantes <span>Entrants</span></h3>
+          <ul>
+            <li>
+              <span class="n"
+                >Anxoves de l'Escala amb coca d'oli amb tomàquet</span
+              >
+              <span class="p">11,80 €</span>
+              <small>Anchoas de la Escala con coca de aceite con tomate</small>
+            </li>
+            <li>
+              <span class="n">Braves trufades amb parmesà picants</span>
+              <span class="p">5,80 €</span>
+              <small>Bravas trufadas con parmesano picantes</small>
+            </li>
+            <li>
+              <span class="n">Croquetes de gamba vermella de Palamós</span>
+              <span class="p">9,80 €</span>
+              <small>Croquetas de gamba roja de Palamós</small>
+            </li>
+            <li>
+              <span class="n">Musclos tigres</span>
+              <span class="p">8,50 €</span>
+              <small>Mejillones tigres rellenos y rebozados</small>
+            </li>
+            <li>
+              <span class="n">Ensaladilla de gamba blanca de Palamós</span>
+              <span class="p">11,20 €</span>
+              <small>Ensaladilla de gamba blanca de Palamós</small>
+            </li>
+            <li>
+              <span class="n"
+                >Amanida de tomàquet amb recuit, ceba i oli d'alfàbrega</span
+              >
+              <span class="p">12,00 €</span>
+              <small
+                >Ensalada de tomate con requesón, cebolla y aceite de
+                albahaca</small
+              >
+            </li>
+            <li>
+              <span class="n">Alvocat farcit d'espinacs, parmesà i pesto</span>
+              <span class="p">11,00 €</span>
+              <small>Aguacate relleno de espinacas, parmesano y pesto</small>
+            </li>
+            <li>
+              <span class="n">Tàrtar de gamba blanca de Palamós</span>
+              <span class="p">15,80 €</span>
+              <small>Tartar de gamba blanca de Palamós</small>
+            </li>
+            <li>
+              <span class="n">Tàrtar de peix de roca amb alvocat</span>
+              <span class="p">15,50 €</span>
+              <small>Tartar de pescado de roca con aguacate</small>
+            </li>
+            <li>
+              <span class="n">Seitons fregits</span>
+              <span class="p">9,90 €</span>
+              <small>Boquerones fritos</small>
+            </li>
+            <li>
+              <span class="n">Calamars a la romana</span>
+              <span class="p">16,50 €</span>
+              <small>Calamares a la romana</small>
+            </li>
+            <li>
+              <span class="n">Musclos al vapor o romesco o curri picant</span>
+              <span class="p">9,80 €</span>
+              <small>Mejillones al vapor, al romesco o al curri picante</small>
+            </li>
+            <li>
+              <span class="n">Tallarines amb oli d'all i festucs</span>
+              <span class="p">19,50 €</span>
+              <small>Coquinas con aceite de ajo y pistachos</small>
+            </li>
+            <li>
+              <span class="n">Steak tàrtar tallat a mà</span>
+              <span class="p">23,50 €</span>
+              <small>Steak tartar cortado a mano (120 g)</small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-pescado">
+          <h3>Pescado y marisco <span>Peix / Marisc</span></h3>
+          <ul>
+            <li>
+              <span class="n"
+                >Sardines al forn amb refregit d'all i julivert</span
+              >
+              <span class="p">14,50 €</span>
+              <small>Sardinas al horno con refrito de ajo y perejil</small>
+            </li>
+            <li>
+              <span class="n">Gamba blanca saltejada amb all i julivert</span>
+              <span class="p">15,80 €</span>
+              <small>Gamba blanca salteada con ajo y perejil</small>
+            </li>
+            <li>
+              <span class="n"
+                >Gambeta vermella saltejada amb all i julivert</span
+              >
+              <span class="p">23,50 €</span>
+              <small>Gambita roja salteada con ajo y perejil</small>
+            </li>
+            <li>
+              <span class="n">Gamba vermella mitjana a la planxa</span>
+              <span class="p">34,80 €</span>
+              <small>Gamba roja mediana a la plancha</small>
+            </li>
+            <li>
+              <span class="n"
+                >Escamarlanet de la nostra costa saltejat amb all i
+                julivert</span
+              >
+              <span class="p">21,00 €</span>
+              <small
+                >Cigalitas de nuestra costa salteadas con ajo y perejil</small
+              >
+            </li>
+            <li>
+              <span class="n">Tronc de bacallà al pil-pil</span>
+              <span class="p">22,00 €</span>
+              <small>Tronco de bacalao al pil-pil</small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-lonja">
+          <h3>Pescado de la lonja de Palamós <span>Peix de la Llotja</span></h3>
+          <ul>
+            <li><span class="n">Gamba blanca</span></li>
+            <li><span class="n">Gamba vermella</span></li>
+            <li><span class="n">Suquet de rascassa</span></li>
+            <li>
+              <span class="n">Sard a la planxa</span>
+              <small>Para 2 personas</small>
+            </li>
+            <li><span class="n">Escamarla mitjà</span></li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-arroces">
+          <h3>Arroces <span>Arrossos</span></h3>
+          <ul>
+            <li>
+              <span class="n">Paella marinera</span>
+              <span class="p">18,20 €</span>
+              <small>Precio por persona</small>
+            </li>
+            <li>
+              <span class="n">Arròs caldós</span>
+              <span class="p">18,90 €</span>
+              <small>Arroz caldoso · precio por persona</small>
+            </li>
+            <li>
+              <span class="n">Arròs sec de gamba vermella</span>
+              <span class="p">23,50 €</span>
+              <small>Arroz seco de gamba roja · precio por persona</small>
+            </li>
+            <li>
+              <span class="n">Arròs negre a la cassola</span>
+              <span class="p">18,90 €</span>
+              <small>Arroz negro a la cazuela · precio por persona</small>
+            </li>
+            <li>
+              <span class="n">Arròs caldós de llamàntol</span>
+              <small>Arroz caldoso de bogavante · mínimo 2 personas</small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-sugerencias">
+          <h3>Sugerencias <span>Suggeriments</span></h3>
+          <ul>
+            <li><span class="n">Pop amb parmentier de parmesà</span></li>
+            <li><span class="n">Tàrtar de peix</span></li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-mediodia">
+          <h3>Menú del mediodía <span>Menú migdia</span></h3>
+          <ul>
+            <li><span class="n">Cloïsses a la marinera amb patates</span></li>
+            <li>
+              <span class="n"
+                >Amanida d'espinacs amb formatge feta, albergínia escalivada i
+                olivada</span
+              >
+            </li>
+            <li><span class="n">Seitons fregits</span></li>
+            <li><span class="n">Paella a la marinera</span></li>
+            <li><span class="n">Suquet de corball</span></li>
+            <li><span class="n">Costelló de porc a la mel</span></li>
+            <li><span class="n">Pastís de formatge</span></li>
+            <li><span class="n">Copa de iogurt amb pinya natural</span></li>
+            <li><span class="n">Crema de llimona amb gelat de coco</span></li>
+            <li><span class="n">Pa i aigua</span></li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-degustacion">
+          <h3>Menú degustación <span>Per començar</span></h3>
+          <ul>
+            <li>
+              <span class="n">Tàrtar de gamba blanca de Palamós</span>
+              <small>Para empezar</small>
+            </li>
+            <li>
+              <span class="n">Croquetes de gamba vermella de Palamós</span>
+              <small>Para empezar</small>
+            </li>
+            <li>
+              <span class="n"
+                >Gamba vermella mitjana de Palamós a la planxa</span
+              >
+              <small>Continuamos con</small>
+            </li>
+            <li>
+              <span class="n">Arròs sec de gamba vermella de Palamós</span>
+              <small>Acabaremos con</small>
+            </li>
+            <li>
+              <span class="n">Recuit amb prunes a l'armanyac</span>
+              <small>Postre</small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat wide" id="c-vinos">
+          <h3>Vinos <span>Blancs · Rosats</span></h3>
+          <ul>
+            <li>
+              <span class="n">Mar Endins · D.O. Empordà</span>
+              <small
+                >Blanco. Garnacha blanca sabrosa, con un agradable equilibrio
+                entre fruta y acidez</small
+              >
+            </li>
+            <li>
+              <span class="n">El Marido de Mi Amiga · D.O. Rioja</span>
+              <small
+                >Blanco. Malvasía, sauvignon blanc y tempranillo; fresco, de
+                trago largo y equilibrado</small
+              >
+            </li>
+            <li>
+              <span class="n">Thayra · D.O. Rueda</span>
+              <small
+                >Blanco. Verdejo intenso, afrutado, refrescante y
+                expresivo</small
+              >
+            </li>
+            <li>
+              <span class="n">Brunus · D.O. Montsant</span>
+              <small>Rosado. Carnoso, envolvente y con matices frutales</small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="cat" id="c-otros">
+          <h3>Otros <span>Altres</span></h3>
+          <ul>
+            <li><span class="n">Aperol Spritz</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="nota">
+        Los platos sin precio se confirman en sala. Consulte alergias e
+        intolerancias a nuestro equipo.
+      </p>
+    </section>
+
+    <section class="vistas" id="vistas">
+      <div class="vistas-img">
+        <img
+          src="img/terraza.png"
+          alt="Terraza con sombrillas blancas y vistas al puerto"
+        />
+      </div>
+      <div class="vistas-text">
+        <h2>Una terraza sobre el puerto</h2>
+        <p>
+          Mesas al sol con vistas a la playa y a los barcos. Para el almuerzo
+          largo o la cena al atardecer.
+        </p>
+        <div class="duo">
+          <img src="img/vista-sala.png" alt="Vistas del puerto desde la mesa" />
+        </div>
+      </div>
+    </section>
+
+    <section class="opiniones" id="opiniones">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="slider" id="slider">
+        <blockquote class="slide active">
+          <p>
+            La gamba de Palamós en tartar fue lo mejor de todo. Una mesa
+            preciosa con vistas a la playa y al puerto.
+          </p>
+          <span class="autor">Gabriela S. · Local Guide</span>
+        </blockquote>
+        <blockquote class="slide">
+          <p>
+            El bacalao estaba muy bien, con las almejas como protagonistas.
+            Ideal antes de la playa.
+          </p>
+          <span class="autor">Daniel C. · Local Guide</span>
+        </blockquote>
+        <blockquote class="slide">
+          <p>
+            Gran sitio para un menú del día, con vistas a la playa y a la
+            marina. Todo muy limpio y el trato, excelente.
+          </p>
+          <span class="autor">Alan S. · Local Guide</span>
+        </blockquote>
+        <blockquote class="slide">
+          <p>La comida muy buena y los camareros muy simpáticos.</p>
+          <span class="autor">Cliente · Google</span>
+        </blockquote>
+      </div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre nosotros</h2>
+      <div class="sobre-grid">
+        <div>
+          <h3>Accesibilidad</h3>
+          <ul>
+            <li>Asientos accesibles para sillas de ruedas</li>
+            <li>Aseo accesible para sillas de ruedas</li>
+            <li class="no">Aparcamiento accesible</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Servicios</h3>
+          <ul>
+            <li>Terraza</li>
+            <li>Servicio en sala</li>
+            <li class="no">Entrega a domicilio</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Destacados</h3>
+          <ul>
+            <li>Buen café</li>
+            <li>Buenos postres</li>
+            <li>Buena carta de vinos</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ideal para</h3>
+          <ul>
+            <li>Almuerzo</li>
+            <li>Cena</li>
+            <li>Comer solo</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ofrece</h3>
+          <ul>
+            <li>Alcohol</li>
+            <li>Cerveza</li>
+            <li>Cócteles</li>
+            <li>Café</li>
+            <li>Opciones saludables</li>
+            <li>Algo rápido</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Opciones de comida</h3>
+          <ul>
+            <li>Almuerzo</li>
+            <li>Cena</li>
+            <li>Postre</li>
+            <li>Mesas</li>
+            <li>Servicio de mesa</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Instalaciones</h3>
+          <ul>
+            <li>Bar en el local</li>
+            <li>Aseos mixtos</li>
+            <li>Aseo</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ambiente</h3>
+          <ul>
+            <li>Informal</li>
+            <li>Acogedor</li>
+            <li>Tranquilo</li>
+            <li>Romántico</li>
+            <li>De moda</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Público</h3>
+          <ul>
+            <li>Grupos</li>
+            <li>Turistas</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Reservas</h3>
+          <ul>
+            <li>Se recomienda reservar para el almuerzo</li>
+            <li>Se recomienda reservar para la cena</li>
+            <li>Acepta reservas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="horarios" id="horarios">
+      <h2>Horarios</h2>
+      <p class="estado" id="estado" role="status"></p>
+      <ul class="dias" id="dias"></ul>
+      <p class="nota">Hora de España peninsular.</p>
+    </section>
+
+    <section class="reservar" id="reservar">
+      <h2>Reserve su mesa</h2>
+      <p class="lead">Díganos cuándo viene y le confirmaremos la reserva.</p>
+
+      <form class="reserva" id="reserva" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            autocomplete="given-name"
+            required
+          />
+        </div>
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            autocomplete="family-name"
+            required
+          />
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            autocomplete="tel"
+            required
+          />
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            autocomplete="email"
+            required
+          />
+        </div>
+        <div class="campo">
+          <label for="personas">Personas</label>
+          <select id="personas" name="personas" required>
+            <option value="" disabled selected>Elegir</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required />
+        </div>
+        <div class="campo full">
+          <label for="hora">Hora</label>
+          <select id="hora" name="hora" required>
+            <option value="" disabled selected>Elegir</option>
+            <optgroup label="Mediodía">
+              <option>11:00</option>
+              <option>11:30</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>14:00</option>
+              <option>14:30</option>
+              <option>15:00</option>
+              <option>15:30</option>
+            </optgroup>
+            <optgroup label="Noche">
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+              <option>21:30</option>
+              <option>22:00</option>
+              <option>22:30</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="campo full">
+          <label for="notas">Comentarios (opcional)</label>
+          <textarea
+            id="notas"
+            name="notas"
+            rows="2"
+            placeholder="Alergias, terraza, celebración…"
+          ></textarea>
+        </div>
+        <div class="campo full envio">
+          <button type="submit" class="btn">Solicitar reserva</button>
+          <p class="aviso" id="aviso" role="status"></p>
+          <p class="nota">
+            Para grupos de más de 10 personas, llámenos al 972 60 02 99.
+          </p>
+        </div>
+      </form>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="info">
+        <h2>Contacto</h2>
+        <p>Plaça de la Murada, 5<br />17230 Palamós, Girona</p>
+        <p><a href="tel:+34972600299">972 60 02 99</a></p>
+        <p>Cerrado los martes</p>
+        <div class="acciones">
+          <a href="tel:+34972600299" class="btn">Llamar ahora</a>
+          <a
+            href="https://wa.me/34972600299?text=Hola%20Altamar%2C%20quisiera%20reservar%20una%20mesa"
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+        </div>
+      </div>
+      <iframe
+        title="Mapa Altamar"
+        loading="lazy"
+        src="https://www.google.com/maps?q=Altamar+Pla%C3%A7a+de+la+Murada+5+Palam%C3%B3s&output=embed"
+      ></iframe>
+    </section>
+
+    <footer>© <span id="year"></span> Altamar · Palamós</footer>
+
+    <a
+      class="wa-float"
+      href="https://wa.me/34972600299?text=Hola%20Altamar%2C%20quisiera%20reservar%20una%20mesa"
+      target="_blank"
+      rel="noopener"
+      aria-label="Escribir por WhatsApp"
+      >WhatsApp</a
+    >
+
+    <script>
+      document.documentElement.classList.add("js");
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      /* ---------- Menú: fondo al hacer scroll + móvil ---------- */
+      const nav = document.getElementById("nav"),
+        menu = document.getElementById("menu"),
+        burger = document.getElementById("burger");
+      const onScroll = () => nav.classList.toggle("solid", window.scrollY > 60);
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      burger.addEventListener("click", () => {
+        const open = menu.classList.toggle("open");
+        burger.setAttribute("aria-expanded", open);
+      });
+      menu.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          menu.classList.remove("open");
+          burger.setAttribute("aria-expanded", false);
+        }),
+      );
+
+      /* ---------- Aparición de los platos ---------- */
+      const io = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((e, i) => {
+            if (e.isIntersecting) {
+              setTimeout(() => e.target.classList.add("in"), i * 150);
+              io.unobserve(e.target);
+            }
+          }),
+        { threshold: 0.2 },
+      );
+      document.querySelectorAll(".plato").forEach((p) => io.observe(p));
+
+      /* ---------- Opiniones ---------- */
+      const slides = [...document.querySelectorAll(".slide")],
+        dots = document.getElementById("dots");
+      let cur = 0,
+        timer;
+      slides.forEach((_, i) => {
+        const b = document.createElement("button");
+        b.setAttribute("aria-label", "Opinión " + (i + 1));
+        b.addEventListener("click", () => {
+          show(i);
+          restart();
+        });
+        dots.appendChild(b);
+      });
+      function show(n) {
+        cur = n;
+        slides.forEach((s, i) => s.classList.toggle("active", i === n));
+        [...dots.children].forEach((d, i) => d.classList.toggle("on", i === n));
+      }
+      function restart() {
+        clearInterval(timer);
+        timer = setInterval(() => show((cur + 1) % slides.length), 6000);
+      }
+      show(0);
+      restart();
+
+      /* ---------- Horarios (0 = domingo ... 6 = sábado) ---------- */
+      const WHATSAPP = "34972600299"; // ← cambia por el móvil con WhatsApp (34 + número)
+
+      const HORARIOS = {
+        0: [
+          ["11:00", "16:30"],
+          ["19:00", "23:30"],
+        ],
+        1: [["11:00", "16:30"]],
+        2: [],
+        3: [["11:00", "16:30"]],
+        4: [
+          ["11:00", "16:30"],
+          ["19:00", "23:30"],
+        ],
+        5: [
+          ["11:00", "16:30"],
+          ["19:00", "23:30"],
+        ],
+        6: [
+          ["11:00", "16:30"],
+          ["19:00", "23:30"],
+        ],
+      };
+      const DIAS = [
+        "Domingo",
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+      ];
+      const ORDEN = [1, 2, 3, 4, 5, 6, 0];
+      const aMin = (h) => {
+        const p = h.split(":");
+        return +p[0] * 60 + +p[1];
+      };
+
+      // Hora actual en España, aunque el visitante esté en otro país
+      function ahora() {
+        const p = new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Europe/Madrid",
+          weekday: "short",
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+        }).formatToParts(new Date());
+        const g = (t) => p.find((x) => x.type === t).value;
+        const d = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+        return {
+          dia: d[g("weekday")],
+          min: (+g("hour") % 24) * 60 + +g("minute"),
+        };
+      }
+
+      function estadoActual() {
+        const n = ahora();
+        for (const [a, b] of HORARIOS[n.dia]) {
+          if (n.min >= aMin(a) && n.min < aMin(b))
+            return {
+              abierto: true,
+              texto: "Abierto ahora · cierra a las " + b,
+            };
+        }
+        for (let i = 0; i <= 7; i++) {
+          const d = (n.dia + i) % 7;
+          for (const [a] of HORARIOS[d]) {
+            if (i === 0 && aMin(a) <= n.min) continue;
+            const cuando =
+              i === 0
+                ? "hoy"
+                : i === 1
+                  ? "mañana"
+                  : "el " + DIAS[d].toLowerCase();
+            return {
+              abierto: false,
+              texto: "Cerrado ahora · abre " + cuando + " a las " + a,
+            };
+          }
+        }
+        return { abierto: false, texto: "Cerrado ahora" };
+      }
+
+      const lista = document.getElementById("dias"),
+        estado = document.getElementById("estado");
+      function pintarHorarios() {
+        const hoy = ahora().dia;
+        lista.innerHTML = ORDEN.map((d) => {
+          const t = HORARIOS[d];
+          const horas = t.length
+            ? t.map((r) => "<span>" + r[0] + " – " + r[1] + "</span>").join("")
+            : "<span>Cerrado</span>";
+          return (
+            '<li class="dia' +
+            (t.length ? "" : " cerrado") +
+            (d === hoy ? " hoy" : "") +
+            '">' +
+            '<span class="nombre">' +
+            DIAS[d] +
+            '</span><span class="horas">' +
+            horas +
+            "</span></li>"
+          );
+        }).join("");
+        const e = estadoActual();
+        estado.textContent = e.texto;
+        estado.className = "estado " + (e.abierto ? "abierto" : "cerrado");
+      }
+      pintarHorarios();
+      setInterval(pintarHorarios, 60000);
+
+      /* ---------- Formulario de reserva ---------- */
+      const form = document.getElementById("reserva");
+      const aviso = document.getElementById("aviso");
+      const fecha = document.getElementById("fecha");
+      const horaSel = document.getElementById("hora");
+      fecha.min = new Date().toISOString().split("T")[0];
+
+      // Solo deja elegir horas válidas según el día
+      function filtrarHoras() {
+        const turnos = fecha.value
+          ? HORARIOS[new Date(fecha.value + "T12:00:00").getDay()]
+          : null;
+        [...horaSel.options].forEach((o) => {
+          if (o.textContent.indexOf(":") === -1) return;
+          const ok =
+            !turnos ||
+            turnos.some(
+              (r) =>
+                aMin(o.textContent.trim()) >= aMin(r[0]) &&
+                aMin(o.textContent.trim()) < aMin(r[1]),
+            );
+          o.disabled = !ok;
+          o.hidden = !ok;
+        });
+        if (horaSel.selectedOptions[0] && horaSel.selectedOptions[0].disabled)
+          horaSel.value = "";
+        if (turnos && !turnos.length) {
+          aviso.textContent = "Ese día estamos cerrados. Elija otro día.";
+          aviso.className = "aviso mal";
+        } else if (aviso.classList.contains("mal")) {
+          aviso.textContent = "";
+          aviso.className = "aviso";
+        }
+      }
+      fecha.addEventListener("change", filtrarHoras);
+      form.addEventListener("reset", () => setTimeout(filtrarHoras));
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let ok = true;
+        form.querySelectorAll("[required]").forEach((c) => {
+          const vacio =
+            !c.value.trim() || (c.type === "email" && !c.checkValidity());
+          c.classList.toggle("error", vacio);
+          if (vacio) ok = false;
+        });
+        if (!ok) {
+          aviso.textContent = "Revise los campos marcados.";
+          aviso.className = "aviso mal";
+          return;
+        }
+
+        const d = Object.fromEntries(new FormData(form));
+        const [y, m, dd] = d.fecha.split("-");
+        if (!HORARIOS[new Date(d.fecha + "T12:00:00").getDay()].length) {
+          aviso.textContent = "Ese día estamos cerrados. Elija otro día.";
+          aviso.className = "aviso mal";
+          return;
+        }
+        let msg = `Hola Altamar, quisiera reservar una mesa:\nNombre: ${d.nombre} ${d.apellido}\nTeléfono: ${d.telefono}\nCorreo: ${d.correo}\nPersonas: ${d.personas}\nFecha: ${dd}/${m}/${y}\nHora: ${d.hora}`;
+        if (d.notas.trim()) msg += `\nComentarios: ${d.notas.trim()}`;
+        window.open(
+          `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`,
+          "_blank",
+          "noopener",
+        );
+        aviso.textContent =
+          "Se abre WhatsApp: pulse enviar para terminar su solicitud.";
+        aviso.className = "aviso";
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
